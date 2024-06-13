@@ -21,8 +21,8 @@ const DatePickerWrapper = (props) => {
       dividerColor={colorToHex(props.dividerColor)}
       theme={getTheme(props)}
       title={getTitle(props)}
-      confirmText={props.confirmText ? props.confirmText : 'Confirm'}
-      cancelText={props.cancelText ? props.cancelText : 'Cancel'}
+      confirmText={props.confirmText ? props.confirmText : 'Confirmar'}
+      cancelText={props.cancelText ? props.cancelText : 'Cancelar'}
       minuteInterval={props.minuteInterval ? props.minuteInterval : 1}
       mode={props.mode ? props.mode : 'datetime'}
       timeZoneOffsetInMinutes={
@@ -56,7 +56,7 @@ const getTitle = (props) => {
   if (title === null) return ''
   if (title) return title
   if (mode === 'time') return 'Select time'
-  return 'Select date'
+  return 'Selecionar data'
 }
 
 export default React.memo(DatePickerWrapper)
